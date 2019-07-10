@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	border: 1px solid red;
+}
+
+.col-1 {width: 33.33%;}
+.col-2 {width: 66.67%;}
+.col-3 {width: 100%;}
