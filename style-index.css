@@ -1,19 +1,27 @@
-* {
-	box-sizing: border-box;
+.wrapper {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-gap: 10px;
+	justify-content: center;
+	align-content: start;
 }
 
-.row::after {
-	content: "";
-	clear: both;
-	display: table;
+h1 {
+	text-align: center;
+	padding-bottom: 1em;
+	grid-column: 1 / 4;
 }
 
-[class*="col-"] {
-	float: left;
-	padding: 15px;
-	border: 1px solid red;
+ul {
+	list-style-type: none;
+	width: 100%;
+	margin: auto;
 }
 
-.col-1 {width: 33.33%;}
-.col-2 {width: 66.67%;}
-.col-3 {width: 100%;}
+.blurb {
+	padding-left: 20px;
+}
+
+.diary-cover {
+	padding-right: 20px;
+}
